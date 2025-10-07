@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Lacquer", system-ui;
+    font-size: 1rem;
+}
+
+
+li{
+    list-style: none;
+}
+
+.header{
+    width: 1300px;
+    max-width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 60px;
+    padding-top: 15px;
+}
+
+.navbar{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.list{
+    display: flex;
+    gap: 60px;
+    color: #fff;
+    font-size: 1.3rem;
+}
+
+.logo-img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.banner{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: -75px;
+}
+
+.content{
+    text-align: center;
+    color: red;
+    text-shadow: 0 10px 50px #630707;
+    user-select: none;
+}
+
+.title{
+    font-size: 6rem;
+    animation: animationBlur 5s linear infinite;
+}
+
+.desc{
+    font-size: 1.7rem;
+    color: #FFA500;
+    text-align: end;
+    rotate: 7deg;
+}
+
+.bg-video{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    filter: brightness(0.4);
+}
+
+@keyframes animationBlur {
+    0%, 80%{
+        filter: blur(0);
+    }
+    90%{
+        filter: blur(5px);
+    }
+    100%{
+        filter: blur(0);
+    }
+}
